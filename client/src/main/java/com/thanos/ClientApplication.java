@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *
  * @author Thanos Yu
  * @date 2018/9/27
  */
@@ -19,16 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ClientApplication {
 
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+    }
+
     @Value("${server.port}")
     String port;
 
     @RequestMapping("/hi")
-    public String home(@RequestParam String name) {
+    public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
         return "Hi " + name + ",i am from port:" + port;
-    }
-
-
-    public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
     }
 }
