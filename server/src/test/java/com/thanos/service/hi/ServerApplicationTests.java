@@ -1,4 +1,4 @@
-package com.thanos;
+package com.thanos.service.hi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

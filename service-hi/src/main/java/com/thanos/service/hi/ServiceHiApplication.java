@@ -1,4 +1,4 @@
-package com.thanos;
+package com.thanos.service.hi;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class ClientApplication {
+public class ServiceHiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
+        SpringApplication.run(ServiceHiApplication.class, args);
     }
 
     @Value("${server.port}")

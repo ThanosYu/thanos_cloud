@@ -1,4 +1,4 @@
-package com.thanos;
+package com.thanos.service.hi.service.ribbon;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ClientApplicationTests {
+public class ServiceRibbonApplicationTests {
 
 	@Test
 	public void contextLoads() {
