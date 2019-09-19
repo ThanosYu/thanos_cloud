@@ -18,12 +18,12 @@ public class HelloService {
     // for hystrix
     @HystrixCommand(fallbackMethod = "hiError")
     public String hiService(String name) {
-        return restTemplate.getForObject("http://SERVICE-HI/hi?name=" + name, String.class);
+        return restTemplate.getForObject("http://SERVICE-HI/hi?name=" + name + "_Ribbon_a", String.class);
     }
 
     // for hystrix
     public String hiError(String name) {
-        return name + ", sorry the hi client is not available!";
+        return name + ", Ribbon is sorry that hi client is not available!";
     }
 
 }

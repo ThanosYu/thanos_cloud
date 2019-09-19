@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class SchedualServiceHiHystric implements SchedualServiceHi {
     @Override
     public String sayHiFromClientOne(String name) {
-        return name + ", sorry the hi client is not available!";
+        return name + ", Feign is sorry that hi client is not available!";
     }
 }
 
